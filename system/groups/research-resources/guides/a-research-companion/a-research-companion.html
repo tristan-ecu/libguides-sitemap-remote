@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Research Companion</title>
+    <link rel="stylesheet" href="../../../../system-style/system-header.css" title="System page header">
+    <link rel="stylesheet" href="../../../../system-style/system-footer.css" title="System page footer">
+    <link rel="stylesheet" href="../../../../system-style/system-js-css.css" title="System custom JS/CSS">
+    <link rel="stylesheet" href="../../../../templates/research-homepage.css" title="Research - Homepage">
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const stylesheets = document.head.querySelectorAll('link[rel="stylesheet"]');
+            stylesheets.forEach(sheet => {
+                const p = document.createElement('p');
+                p.textContent = sheet.getAttribute('title');
+                document.body.appendChild(p);
+            });
+        });
+    </script>
+</body>
+</html>

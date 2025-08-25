@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Essentials</title>
+    <link rel="stylesheet" href="../../group-style/group-header.css" title="Group page header">
+    <link rel="stylesheet" href="../../group-style/group-footer.css" title="Group page footer">
+    <link rel="stylesheet" href="../../group-style/group-js-css.css" title="Group custom JS/CSS">
+    <link rel="stylesheet" href="../../../../templates/study-essentials-guides-library-essentials.css" title="Study Essentials - GUIDES (Library Essentials)">
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const stylesheets = document.head.querySelectorAll('link[rel="stylesheet"]');
+            stylesheets.forEach(sheet => {
+                const p = document.createElement('p');
+                p.textContent = sheet.getAttribute('title');
+                document.body.appendChild(p);
+            });
+        });
+    </script>
+</body>
+</html>
