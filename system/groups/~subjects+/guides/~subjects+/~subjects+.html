@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subject guides, Referencing & EndNote, support guides, UniPrep</title>
-    <link rel="stylesheet" href="../../../../system-style/system-header.css" title="System page header">
-    <link rel="stylesheet" href="../../../../system-style/system-footer.css" title="System page footer">
-    <link rel="stylesheet" href="../../../../system-style/system-js-css.css" title="System custom JS/CSS">
-    <link rel="stylesheet" href="../../../../templates/subject-guides-template.css" title="Subject Guides Template">
+    <link rel="stylesheet" href="../../../../../style.css">
+    <title>~subjects+</title>
 </head>
 <body>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const stylesheets = document.head.querySelectorAll('link[rel="stylesheet"]');
-            stylesheets.forEach(sheet => {
-                const p = document.createElement('p');
-                p.textContent = sheet.getAttribute('title');
-                document.body.appendChild(p);
-            });
-        });
-    </script>
+    <ul class="breadcrumbs">
+        <li><a href="../../../../../index.html">system</a></li>
+        <li><a href="../../../groups-index.html">groups</a></li>
+        <li><a href="../../group-index.html">~subjects+</a></li>
+        <li><a href="../guides-index.html">guides</a></li>        
+        <li>~subjects+</li>
+    </ul>
+    <p class="label">Styled & structured by:</p>
+    <ul>
+        <li><a href="../../../../system-style/system-header.html">System page header</a></li>
+        <li><a href="../../../../system-style/system-footer.css">System page footer</a></li>
+        <li><a href="../../../../system-style/system-js-css.css">System custom JS/CSS</a></li>
+        <li class="note">Applied internally; in the &lt;head&gt;.</li>
+        <li><a href="../../../../templates/subject-guides-template.css">Subject Guides Template</a></li>
+    </ul>
 </body>
 </html>
